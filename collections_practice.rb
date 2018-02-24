@@ -46,11 +46,11 @@ end
 #   array.inject { |sum, n| sum + n }
 # end
 
-# def add_s(array)
-#   array.each_with_index { |item, index| item << "s" unless index == 1 }
-# end
+def add_s(array)
+  array.each_with_index { |item, index| item << "s" unless index == 1 }
+end
 
 # using .each_with_index.collect
-def add_s(array)
-  array.each_with_index.collect { |item, index| index != 1 ? item << "s" : item }
-end
+# def add_s(array)
+#   array.each_with_index.collect { |item, index| index != 1 ? item << "s" : item }
+# end
